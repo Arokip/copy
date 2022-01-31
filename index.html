@@ -3,12 +3,10 @@
 <body>
 
 <script type="text/javascript">
-	location.reload();
 	var queryString = window.location.search;
 	if (queryString.length > 0) queryString = queryString.substring(1);
-	// navigator.clipboard.writeText(queryString);
-	// await navigator.clipboard.writeText("was copied");
-	navigator.clipboard.writeText(queryString).then((value) => window.close());
+	await navigator.clipboard.writeText(queryString).then((value) => window.close());
+	location.reload();
 </script>
 
 </body>
