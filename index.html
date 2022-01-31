@@ -5,8 +5,7 @@
 <script type="text/javascript">
 	var queryString = window.location.search;
 	if (queryString.length > 0) queryString = queryString.substring(1);
-	navigator.clipboard.writeText(queryString).then((value) => window.close());
-	location.reload();
+	navigator.clipboard.writeText(queryString).then((value) => window.close()).then((value) => location.reload());
 </script>
 
 </body>
